@@ -1,21 +1,14 @@
-<<<<<<< HEAD
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
   siteMetadata: {
+    title: "My First Gatsby Site",
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
-}
-=======
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
-module.exports = {
-  siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
-  },
-  plugins: [],
-}
->>>>>>> dff1a316ff20befa7697644830fc5c873dc5a37c
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    `gatsby-transformer-sharp`, // Needed for dynamic images
+  ],
+};
